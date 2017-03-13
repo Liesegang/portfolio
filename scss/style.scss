@@ -6,6 +6,11 @@ $breakpoint-sp: 768px;
 	width: 100%;
 }
 
+.image {
+	padding: 10px;
+	background-color:#e6e6e6;
+}
+
 .work {
 	background-size: cover;
 	height: 100vh;
@@ -14,6 +19,14 @@ $breakpoint-sp: 768px;
 	margin: 0;
 	padding: 0;
   @media screen and (min-width: $breakpoint-sp) {
+  	.margin-adjust {
+	  margin: 20% 0;  	
+  	}
+
+  	.image {
+  	  margin: 0 20%;
+  	}
+
     .work-title {
       color: #fff;
       font-family : 游ゴシック;
@@ -23,6 +36,14 @@ $breakpoint-sp: 768px;
     }
   }
   @media screen and (max-width: $breakpoint-sp) {
+  	.margin-adjust {
+  	  margin: 10% 0;
+  	}
+
+  	.image {
+  	  margin: 0;
+  	}
+
     .work-title {
       color: #fff;
       font-family : 游ゴシック;

@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "team3"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Liesegang/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

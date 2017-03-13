@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var mainBowerFiles = require('main-bower-files');
 var sass = require('gulp-sass');
 var merge = require('merge-stream');
+var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var runSequence = require('run-sequence');
 var git = require('gulp-git');
@@ -23,6 +24,10 @@ gulp.task('styles', function() {
   gulp.src(config.srcDir + '/style.scss')
     .pipe(sass({
       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
+    }))
+    .pipe(autoprefixer({
+      browsers: ['last 2 version', 'iOS >= 8.1', 'Android >= 4.4'],
+      cascade: false
     }))
     .pipe(minifyCSS({keepSpecialComments: 1}))
     .pipe(gulp.dest(config.distDir));

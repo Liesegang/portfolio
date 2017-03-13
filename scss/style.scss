@@ -1,5 +1,7 @@
 @import "bootstrap-custom";
 
+$breakpoint-sp: 768px;
+
 .wrapper {
 	width: 100%;
 }
@@ -11,6 +13,29 @@
   background-position: center;
 	margin: 0;
 	padding: 0;
+  @media screen and (min-width: $breakpoint-sp) {
+    .work-title {
+      color: #fff;
+      font-family : 游ゴシック;
+      font-size: 45px;
+      font-weight: bold;
+      letter-spacing: 9px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-sp) {
+    .work-title {
+      color: #fff;
+      font-family : 游ゴシック;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 6px;
+    }
+  }
+  .label.category {
+    font-size: 14px !important;
+    letter-spacing: 2px;
+    padding: 5px;
+  }
 }
 
 #work01 {

@@ -1,1 +1,21 @@
 @import "bootstrap-custom";
+
+.wrapper {
+	width: 100%;
+}
+
+.work {
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+#work01 {
+	background-image: url('carry.png');
+}
+
+#work02 {
+	background-image: url('tedxaizuwakamatsu.jpg');
+}

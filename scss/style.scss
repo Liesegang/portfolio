@@ -11,6 +11,7 @@ $breakpoint-sp: 768px;
 	height: 100vh;
 	background-attachment: fixed;
   background-position: center;
+  backdrop-filter: blur(2px);
 	margin: 0;
 	padding: 0;
   @media screen and (min-width: $breakpoint-sp) {
@@ -31,10 +32,14 @@ $breakpoint-sp: 768px;
       letter-spacing: 6px;
     }
   }
+  .categories {
+    padding: 15px 15px 15px 15px;
+  }
   .label.category {
     font-size: 14px !important;
     letter-spacing: 2px;
     padding: 5px;
+    border-radius: 0px;
   }
 }
 

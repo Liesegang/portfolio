@@ -15,8 +15,7 @@ $breakpoint-sp: 768px;
 	background-size: cover;
 	height: 100vh;
 	background-attachment: fixed;
-  background-position: center;
-  backdrop-filter: blur(2px);
+	background-position: center;
 	margin: 0;
 	padding: 0;
   @media screen and (min-width: $breakpoint-sp) {
@@ -64,12 +63,16 @@ $breakpoint-sp: 768px;
     margin: 5px;
     display: inline-block;
   }
+
+  .work-caption {
+  	color: #fff;
+  }
 }
 
 #work01 {
-	background-image: url('carry.png');
+	background-image: url('images/background/carry.png');
 }
 
 #work02 {
-	background-image: url('tedxaizuwakamatsu.jpg');
+	background-image: url('images/background/tedxaizuwakamatsu.jpg');
 }
